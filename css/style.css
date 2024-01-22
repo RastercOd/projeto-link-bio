@@ -28,6 +28,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background: var(--bg-url) top center/cover; /*essa é uma maneira de simplificar o codigo, em poucas linhas*/
+    height: 100vh; /* é a altura total disponivel do body*/
 }
 
 /*uma maneira de centralizar um elemento no meio do bloco, um das maneiras é dando margin: 0 auto; que significa que ele vai dar 0 para cima e baixo e automatica para os lados*/
@@ -155,4 +156,14 @@ ul li a:hover {
     text-decoration: none;
     color: var(--color-text);
     font-weight: 400;
+}
+
+@media (min-width: ) /*aqui eu faço que quando o tamanho da tela for maior que 700px, ela ira adicionar essas mudanças*/ {
+    :root {
+        --bg-url: url(/assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(/assets/bg-desktop-.jpg);
+    }
 }
