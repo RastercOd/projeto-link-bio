@@ -40,7 +40,8 @@ body {
 
 .container {
     margin-top: 56px;
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 0 auto;
     padding: 0 24px;
 }
